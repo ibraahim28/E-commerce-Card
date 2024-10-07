@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+  }
+  
+  body {
+    width: 100vw;
+    min-height: 100vh; /* Ensure minimum height of the body */
+    display: flex;
+    justify-content: center;
+    background-color: #d2dbdf;
+    overflow-x: hidden;
+    padding: 20px; /* Add some padding to avoid touching the edge of the viewport */
+  }
+  
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 100vw;
+    padding: 10px;
+    max-width: 1200px; /* Set a maximum width for the container */
+  }
+  
+  .card {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    height: 350px; /* Set a fixed height */
+    border: 1px solid #000;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 2px 2px 4px #0000002f;
+    overflow: hidden; /* Ensure overflow is hidden */
+  }
+  
+  .img-div img {
+    width: 200px;
+    height: 120px; /* Set a fixed height for the image */
+    border-radius: 8px;
+    object-fit: cover; /* Ensure images maintain their aspect ratio */
+  }
+  
+  .title-div {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: start;
+    gap: 10px;
+    margin: 10px 0;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #818181;
+
+  }
+  
+  .title-div h2 {
+    font-size: 12px;
+    font-weight: 600;
+    text-align: left;
+    color: #000;
+    line-height: 1.2;
+    overflow: hidden;
+  }
+  
+  .description-box {
+    flex-grow: 1;
+    overflow: hidden;
+  }
+  
+  .description-box p {
+    font-size: 12px;
+    color: #555;
+    line-height: 1.2;
+    max-height: 40px; /* Limit the height of the description */
+    overflow: hidden;
+    text-overflow: ellipsis; /* Truncate long descriptions */
+  }
+  
+  
